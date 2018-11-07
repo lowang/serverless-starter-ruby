@@ -1,0 +1,14 @@
+service: serverless-jruby2
+
+provider:
+  name: aws
+  runtime: java8
+  region: eu-west-1
+
+package:
+  artifact: build/compile/hello.jar
+
+functions:
+  hello:
+    handler: Hello::handler
+    timeout: 60
