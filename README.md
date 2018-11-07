@@ -9,7 +9,7 @@ install all gems from Gemfile inside a jar
 and create final jar ready to be deployed.
 
 # How to use
-1. Add your ruby code to lib/hello.rb
+1. Add your ruby code to `lib/hello.rb`
 
 please note that you cannot use `Bundler.require`,
 you have to require all gems manually like `require 'rspec'`
