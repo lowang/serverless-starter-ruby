@@ -4,8 +4,13 @@ Run ruby code on JRuby on AWS Lambda Java
 based on:
 https://github.com/plainprogrammer/aws-lambda-jruby
 
+Rake task downloads jruby-complete,
+install all gems from Gemfile inside a jar
+and create final jar ready to be deployed.
+
 # How to use
 1. Add your ruby code to lib/hello.rb
+
 please note that you cannot use `Bundler.require`,
 you have to require all gems manually like `require 'rspec'`
 
